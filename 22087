@@ -1,8 +1,0 @@
-body {background-color: #a1b2c3; padding: 10px;}
-.jumbotron {background-color: rgba(100, 0, 0, 0.2);}
-small {float: right; font-style: italic; font-size: xx-small;}
-#main {text-align: center;}
-.row .form-control {width: 495px; margin: 5px;}
-@media screen and (max-device-width: 400px) {
-	.row .form-control {width: 95px; margin: 5px;}
-}
