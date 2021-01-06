@@ -12,13 +12,6 @@
     </v-app-bar>
 
     <v-main>
-      <v-sheet>
-        <v-card-title>
-          <h1>GP:</h1>
-          <v-spacer></v-spacer>
-          <h1>{{ this.$root.gp }}</h1>
-        </v-card-title>
-      </v-sheet>
       <GPCalc></GPCalc>
     </v-main>
 
