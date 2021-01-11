@@ -33,7 +33,7 @@
               <v-col cols="6">Sum Of Units:</v-col>
               <v-col cols="6">{{ sumOfUnits }}</v-col>
               <v-col cols="6"><b>Final GP:</b></v-col>
-              <v-col cols="6">{{ this.$root.gp }}</v-col>
+              <v-col cols="6">{{ this.$root.gp.toFixed(2) }}</v-col>
             </v-row>
           </v-container>
         </v-card-text>
