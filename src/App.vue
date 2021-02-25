@@ -10,9 +10,10 @@
         </v-card-title>
       </v-app-bar-title>
       <v-spacer></v-spacer>
-      <v-btn icon class="mr-5" @click="showInfo = true">
+      <v-btn icon class="mr-5 hidden-md-and-up" @click="showInfo = true">
         <v-icon>mdi-info</v-icon>
       </v-btn>
+      <v-btn text rounded @click="showInfo = true">How We Calculate Your GP</v-btn>
     </v-app-bar>
 
     <v-main>
