@@ -10,6 +10,7 @@ new Vue({
 	data: {
 		showInfo: false,
 		inputs: null,
+		gp: null,
 	},
 	render: h => h(App)
 }).$mount('#app')
