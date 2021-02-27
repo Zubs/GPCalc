@@ -11,9 +11,9 @@
       </v-app-bar-title>
       <v-spacer></v-spacer>
       <v-btn icon class="mr-5 hidden-md-and-up" @click="showInfo = true">
-        <v-icon>mdi-info</v-icon>
+        <v-icon>mdi-information-variant</v-icon>
       </v-btn>
-      <v-btn text rounded @click="showInfo = true">How We Calculate Your GP</v-btn>
+      <v-btn text rounded @click="showInfo = true" class="hidden-sm-and-down"><v-icon left>mdi-information-variant</v-icon>How We Calculate Your GP</v-btn>
     </v-app-bar>
 
     <v-main>
@@ -21,17 +21,7 @@
     </v-main>
 
     <v-dialog v-model="showInfo" fullscreen hide-overlay transition="dialog-bottom-transition">
-      <v-card>
-        <v-toolbar dark color="primary">
-          <v-btn icon dark @click="showInfo = false">
-            <v-icon>mdi-close</v-icon>
-          </v-btn>
-          <v-toolbar-title>How We Calculate The GP</v-toolbar-title>
-        </v-toolbar>
-        <v-card-text class="pa-5 ma-5">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit impedit saepe accusantium provident perferendis error, architecto deserunt doloribus, dolore magni? Quas ducimus voluptatem, modi minus excepturi deserunt iusto voluptatum, maiores.</p>
-        </v-card-text>
-      </v-card>
+      <HowWeCalc></HowWeCalc>
     </v-dialog>
 
     <v-footer padless app color="primary" dark>
@@ -42,16 +32,20 @@
 
 <script>
 import GPCalc from './components/GPCalc';
+import HowWeCalc from './components/HowWeCalc';
 
 export default {
   name: 'App',
 
   components: {
     GPCalc,
+    HowWeCalc
   },
 
-  data: () => ({
-    showInfo: false,
-  }),
+  data () {
+    return {
+      showInfo: this.$root.showInfo,
+    }
+  }
 };
 </script>

@@ -5,13 +5,13 @@
         <v-form ref="data">
           <v-row>
             <v-col cols="12" md="3" v-for="(item, i) in inputs" :key="i">
-              <v-text-field label="Course" dense v-model="item.course" :rules="courseRules"></v-text-field>
+              <v-text-field label="Course" dense v-model="item.course" :rules="courseRules" append-icon="mdi-close" @click:append="Remove(i)"></v-text-field>
               <v-text-field label="Units" dense v-model="item.units" :rules="unitsRules" type="number" min="0" max="999"></v-text-field>
               <v-select label="Grade" dense v-model="item.points" :items="grades" item-text="letter" item-value="score" hint="Grade"></v-select>
             </v-col>
             <v-col cols="12" md="12">
               <v-btn color="primary" dark rounded @click="Calculate" class="mr-2">Calculate</v-btn>
-              <v-btn color="primary" dark rounded @click="Add" elevation="24" fab absolute app bottom right large>
+              <v-btn color="primary" dark rounded @click="Add" elevation="24" fab fixed app bottom right large class="mb-5">
                 <v-icon>mdi-plus</v-icon>
               </v-btn>
             </v-col>
@@ -125,7 +125,8 @@
             }
           });
 
-          // sum(unit * grade) / sum(unit)
+          // Store these values to root
+          this.$root.inputs = this.inputs;
 
           let gp = this.sumOfGrades / this.sumOfUnits;
           this.$root.gp = gp.toFixed(2);
@@ -144,6 +145,11 @@
         };
 
         this.inputs.push(newRow);
+      },
+
+      Remove (index) {
+        // alert("Item " + index + " clicked.");
+        this.inputs.splice(index, 1);
       }
     }
   }

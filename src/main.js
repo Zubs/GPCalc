@@ -6,7 +6,10 @@ import vuetify from './plugins/vuetify';
 Vue.config.productionTip = false
 
 new Vue({
-  vuetify,
-  data: {gp: null},
-  render: h => h(App)
+	vuetify,
+	data: {
+		showInfo: false,
+		inputs: null,
+	},
+	render: h => h(App)
 }).$mount('#app')
