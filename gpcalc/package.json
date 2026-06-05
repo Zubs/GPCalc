@@ -1,0 +1,25 @@
+{
+  "name": "gpcalc",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "TMPDIR=/tmp nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/color-mode": "^3.4.2",
+    "@pinia/nuxt": "^0.5.5",
+    "chart.js": "^4.4.4",
+    "nuxt": "^3.13.0",
+    "pinia": "^2.2.2",
+    "vue": "^3.5.4",
+    "vue-router": "^4.4.3"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "sass": "^1.79.3"
+  }
+}
