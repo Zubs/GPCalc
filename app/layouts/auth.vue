@@ -8,8 +8,8 @@
 
     <header class="auth-header">
       <NuxtLink to="/" class="logo">
-        <span class="logo-icon">GP</span>
-        <span class="logo-text">Calc</span>
+        <span class="logo-icon">GM</span>
+        <span class="logo-text">GradeMate</span>
       </NuxtLink>
       <ColorModeToggle/>
     </header>
@@ -19,7 +19,7 @@
     </main>
 
     <footer class="auth-footer">
-      <p>© {{ new Date().getFullYear() }} GPCalc &mdash; Built for students.</p>
+      <p>© {{ new Date().getFullYear() }} GradeMate &mdash; Built for students.</p>
     </footer>
   </div>
 </template>

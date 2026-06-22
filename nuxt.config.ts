@@ -19,7 +19,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'GPCalc — Your Academic Journey, Tracked',
+      title: 'GradeМаtе — Your Academic Journey, Tracked',
       meta: [
         { name: 'description', content: 'Calculate, forecast, and track your GPA across every semester. Built for students who take their grades seriously.' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

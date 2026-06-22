@@ -152,8 +152,8 @@ export const useAcademicStore = defineStore('academic', () => {
 
     // Hydrate
     if (import.meta.client) {
-        const y = localStorage.getItem('gpcalc_years')
-        const s = localStorage.getItem('gpcalc_scale')
+        const y = localStorage.getItem('grademate_years')
+        const s = localStorage.getItem('grademate_scale')
         if (y) try {
             years.value = JSON.parse(y)
         } catch {
@@ -165,8 +165,8 @@ export const useAcademicStore = defineStore('academic', () => {
 
     function persist() {
         if (import.meta.client) {
-            localStorage.setItem('gpcalc_years', JSON.stringify(years.value))
-            localStorage.setItem('gpcalc_scale', gradingScale.value)
+            localStorage.setItem('grademate_years', JSON.stringify(years.value))
+            localStorage.setItem('grademate_scale', gradingScale.value)
         }
     }
 

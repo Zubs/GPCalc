@@ -16,7 +16,7 @@ export const useAuthStore = defineStore('auth', () => {
 
     // Hydrate from localStorage on client
     if (import.meta.client) {
-        const stored = localStorage.getItem('gpcalc_user')
+        const stored = localStorage.getItem('grademate_user')
         if (stored) {
             try {
                 user.value = JSON.parse(stored)
@@ -49,7 +49,7 @@ export const useAuthStore = defineStore('auth', () => {
         }
         user.value = mockUser
         if (import.meta.client) {
-            localStorage.setItem('gpcalc_user', JSON.stringify(mockUser))
+            localStorage.setItem('grademate_user', JSON.stringify(mockUser))
         }
 
         isLoading.value = false
@@ -75,7 +75,7 @@ export const useAuthStore = defineStore('auth', () => {
         }
         user.value = mockUser
         if (import.meta.client) {
-            localStorage.setItem('gpcalc_user', JSON.stringify(mockUser))
+            localStorage.setItem('grademate_user', JSON.stringify(mockUser))
         }
 
         isLoading.value = false
@@ -85,7 +85,7 @@ export const useAuthStore = defineStore('auth', () => {
     function logout() {
         user.value = null
         if (import.meta.client) {
-            localStorage.removeItem('gpcalc_user')
+            localStorage.removeItem('grademate_user')
         }
     }
 
@@ -101,7 +101,7 @@ export const useAuthStore = defineStore('auth', () => {
         }
 
         if (import.meta.client) {
-            localStorage.setItem('gpcalc_user', JSON.stringify(user.value))
+            localStorage.setItem('grademate_user', JSON.stringify(user.value))
         }
     }
 

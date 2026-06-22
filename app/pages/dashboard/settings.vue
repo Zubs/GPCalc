@@ -245,7 +245,7 @@ function exportData() {
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
   a.href = url;
-  a.download = 'gpcalc-export.json';
+  a.download = 'grademate-export.json';
   a.click()
   URL.revokeObjectURL(url)
 }
@@ -253,7 +253,9 @@ function exportData() {
 function confirmClear() {
   if (confirm('This will permanently delete all your academic data. Continue?')) {
     academic.years.splice(0)
-    if (import.meta.client) localStorage.removeItem('gpcalc_years')
+    if (import.meta.client) {
+      localStorage.removeItem('grademate_years')
+    }
   }
 }
 

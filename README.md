@@ -1,4 +1,4 @@
-# GPCalc — Nuxt 3 Rewrite
+# GradeMate — Nuxt 3 Rewrite
 
 > Your academic journey, tracked. A full-product GPA calculator built with Nuxt 3, Pinia, and Chart.js.
 
@@ -21,7 +21,7 @@ npm run dev
 ## Project structure
 
 ```
-gpcalc/
+grademate/
 ├── app/
 │   ├── app.vue                    # Root with page transitions
 │   ├── error.vue                  # 404 page
@@ -82,8 +82,8 @@ All tokens live in `assets/css/main.css` as CSS custom properties.
 ## Data model
 
 ```
-User (localStorage: gpcalc_user)
-  └── AcademicYear[]  (localStorage: gpcalc_years)
+User (localStorage: grademate_user)
+  └── AcademicYear[]  (localStorage: grademate_years)
         └── Semester[]
               └── Course[]
                     ├── name, code

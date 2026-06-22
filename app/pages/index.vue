@@ -43,7 +43,7 @@
               <div class="preview-dots">
                 <span></span><span></span><span></span>
               </div>
-              <span class="preview-title">GPCalc — Overview</span>
+              <span class="preview-title">GradeMate — Overview</span>
             </div>
             <div class="preview-body">
               <div class="preview-stat-row">
@@ -135,7 +135,7 @@
       <div class="container">
         <div class="section-label">Grading scales</div>
         <h2 class="section-title display">Your system,<br>not ours</h2>
-        <p class="section-sub">Switch between grading systems in one click. GPCalc adapts to your institution's
+        <p class="section-sub">Switch between grading systems in one click. GradeMate adapts to your institution's
           standards.</p>
 
         <div class="scales-grid">
@@ -163,7 +163,7 @@
         <div class="cta-card">
           <div class="cta-bg-blob"></div>
           <h2 class="cta-title display">Ready to take control<br>of your GPA?</h2>
-          <p class="cta-sub">Join students who track their academic progress with GPCalc.</p>
+          <p class="cta-sub">Join students who track their academic progress with GradeMate.</p>
           <div class="cta-actions">
             <NuxtLink to="/register" class="btn btn-primary btn-lg">Create your free account</NuxtLink>
             <NuxtLink to="/login" class="btn btn-ghost btn-lg">Sign in</NuxtLink>
@@ -257,7 +257,7 @@ const steps = [
   },
   {
     title: 'See your GPA instantly',
-    desc: 'GPCalc calculates your semester GPA and running CGPA the moment you enter data.'
+    desc: 'GradeMate calculates your semester GPA and running CGPA the moment you enter data.'
   },
   {
     title: 'Plan your next move',

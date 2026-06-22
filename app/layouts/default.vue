@@ -3,8 +3,8 @@
     <header class="site-header" :class="{ scrolled }">
       <div class="container header-inner">
         <NuxtLink to="/" class="logo">
-          <span class="logo-icon">GP</span>
-          <span class="logo-text">Calc</span>
+          <span class="logo-icon">GM</span>
+          <span class="logo-text">GradeMate</span>
         </NuxtLink>
 
         <nav class="nav-links">
@@ -48,8 +48,8 @@
       <div class="container footer-inner">
         <div class="footer-brand">
           <NuxtLink to="/" class="logo">
-            <span class="logo-icon">GP</span>
-            <span class="logo-text">Calc</span>
+            <span class="logo-icon">GM</span>
+            <span class="logo-text">GradeMate</span>
           </NuxtLink>
           <p class="footer-tagline">Your academic journey, tracked.</p>
         </div>
@@ -61,13 +61,13 @@
           </div>
           <div class="footer-col">
             <p class="footer-col-title">Support</p>
-            <a href="mailto:hello@gpcalc.app">Contact</a>
+            <a href="mailto:zubairidrisaweda@gmail.com">Contact</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <div class="container">
-          <p>© {{ new Date().getFullYear() }} GPCalc. Built for students, by students.</p>
+          <p>© {{ new Date().getFullYear() }} GradeMate. Built for students, by students.</p>
         </div>
       </div>
     </footer>

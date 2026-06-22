@@ -4,8 +4,8 @@
     <aside class="sidebar" :class="{ open: sidebarOpen }">
       <div class="sidebar-header">
         <NuxtLink to="/" class="logo">
-          <span class="logo-icon">GP</span>
-          <span class="logo-text">Calc</span>
+          <span class="logo-icon">GM</span>
+          <span class="logo-text">GradeMate</span>
         </NuxtLink>
         <button class="sidebar-close" @click="sidebarOpen=false">✕</button>
       </div>
